@@ -1,3 +1,35 @@
 body {
     height: 100vh;
 }
+
+div#side_panel {
+    width: 10vh;
+}
+
+div.contact_link {
+    height: 7vh;
+    width: 7vh;
+    padding-right: 1vh;
+    padding-top: 3px;
+    border-radius: 0 8vh 8vh 0;
+    background-color: white;
+    text-align: right;
+    transform: rotate(0);
+
+    /* Transitions */
+    transition: 0.1s ease-in;
+}
+
+div.contact_link:hover {
+    width: 18vh;
+}
+
+p.contact_link_name {
+    font-size: 2vh;
+    display: none;
+    /* display: inline-block; */
+}
+
+img.logo {
+    max-height: 6vh;
+}
