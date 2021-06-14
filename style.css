@@ -18,21 +18,28 @@ div#projects {
 
 div.project {
     height: 30%;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 2vh 2vh 0;
 }
 
 div.carousel {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40%;
     min-width: 275px;
 }
 
-div.carousel_item {
-    width: 100%;
+div.carousel_inner {
+    display: flex;
+    justify-content: center;
 }
 
 img.carousel_image {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 div.feature_container {
@@ -68,8 +75,18 @@ img.logo {
     max-height: 6vh;
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 900px){
     div.carousel {
+        padding-top: 0;
         width: 100%;
+    }
+
+    div.project {
+        border-radius: 0 0 2vh 2vh;
+        align-items: flex-start;
+    }
+
+    div.carousel {
+        min-width: 0;
     }
 }
