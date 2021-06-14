@@ -6,12 +6,22 @@ div#side_panel {
     width: 10vh;
 }
 
+div.page_container {
+    min-width: 100%;
+    height: 100vh;
+}
+
+div.feature_container {
+    min-width: 100%;
+    height: 25vh;
+}
+
 div.contact_link {
     height: 7vh;
     width: 7vh;
     padding-right: 1vh;
     padding-top: 3px;
-    border-radius: 0 8vh 8vh 0;
+    border-radius: 0 2vh 2vh 0;
     background-color: white;
     text-align: right;
     transform: rotate(0);

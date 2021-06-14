@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://app.99inbound.com/99inbound.js"></script>
     <link rel="stylesheet" href="bootstrap-5.0.1/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css"/>
     <title>Dean Raguso</title>
 </head>
 <body>
-    <div class="container-fluid bg-dark h-100 position-absolute p-0">
+    <div class="container-fluid h-100 position-absolute p-0">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Dean Raguso</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-expand" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                  <a class="nav-link" href="#">Projects</a>
-                  <a class="nav-link" href="#">Contact Me</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#contacts">Contact Me</a>
                 </div>
               </div>
             </div>
@@ -52,18 +50,42 @@
         </div>
 
         <!-- Body of Page -->
-        <div class="container-fluid h-100 d-flex">
+        <div class="container-fluid d-flex flex-column p-0">
             
             <!-- Landing Page -->
-            <div class="container bg-secondary h-75 mt-5">
-                <h1 class="display-1 text-center">Dean Raguso</h1>
-                
+            <div class="page_container pb-5 container-fluid w-100 d-flex bg-dark">
+                <div class="container-fluid col-md-8 d-flex flex-column justify-content-center">
+                    <h1 class="display-1 text-center text-white">Dean Raguso</h1>
+                    <h2 class="display-2 text-center text-white">A Melbourne based Web Developer.</h2>
+                    <a href="#projects"><p class="text-white text-center display-6">Projects</p></a>
+                </div>
             </div>
 
+            <!-- Feature Divider 1 -->
+            <div class="feature_container container-fluid w-100 d-flex bg-warning"> 
+                <!-- <div class="container-fluid col-md-8 bg-secondary my-5">
+                </div> -->
+            </div>
 
-            
+            <!-- Projects Page -->
+            <div id="projects" class="page_container container-fluid w-100 d-flex bg-primary"> 
+                <div class="container-fluid col-md-8 bg-secondary my-5">
+                </div>
+            </div>
 
+            <!-- Feature Divider 2 -->
+            <div class="feature_container container-fluid w-100 d-flex bg-warning"> 
+                <!-- <div class="container-fluid col-md-8 bg-secondary my-5">
+                </div> -->
+            </div>
 
+            <!-- Contacts Page -->
+            <div id="contacts" class="page_container container-fluid w-100 d-flex bg-success justify-content-center align-items-center p-3"> 
+                <div class="container-fluid col-md-8 bg-secondary my-5">
+                    <h3 class="display-1 text-white text-center">Message Me</h3>
+                    <div class="inbound-form-wrapper" id="form_5300" data-path="https://app.99inbound.com/i/7a7bc2cb-52cc-4a43-bac8-9c6c7ae935cc" data-token="3S4trmDwdyJvMhXcE8ycbwtt"></div>
+                </div>
+            </div>
 
         </div>
     </div>
