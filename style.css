@@ -4,11 +4,35 @@ body {
 
 div#side_panel {
     width: 10vh;
+    z-index: 2000;
 }
 
 div.page_container {
     min-width: 100%;
     height: 100vh;
+}
+
+div#projects {
+    height: 150vh
+}
+
+div.project {
+    height: 30%;
+}
+
+div.carousel {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    min-width: 275px;
+}
+
+div.carousel_item {
+    width: 100%;
+}
+
+img.carousel_image {
+    width: 100%;
 }
 
 div.feature_container {
@@ -21,7 +45,7 @@ div.contact_link {
     width: 7vh;
     padding-right: 1vh;
     padding-top: 3px;
-    border-radius: 0 2vh 2vh 0;
+    border-radius: 0 1vh 1vh 0;
     background-color: white;
     text-align: right;
     transform: rotate(0);
@@ -42,4 +66,10 @@ p.contact_link_name {
 
 img.logo {
     max-height: 6vh;
+}
+
+@media only screen and (max-width: 750px){
+    div.carousel {
+        width: 100%;
+    }
 }
