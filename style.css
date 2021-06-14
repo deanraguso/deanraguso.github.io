@@ -17,7 +17,7 @@ div.contact_link {
     transform: rotate(0);
 
     /* Transitions */
-    transition: 0.1s ease-in;
+    transition: 0.1s ease-out;
 }
 
 div.contact_link:hover {

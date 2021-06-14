@@ -5,11 +5,14 @@ document.querySelectorAll("div.contact_link").forEach(element => {
         setTimeout( function() {
             contact_link_text.style.display="inline-block";
         }
-        ,100);
+        ,70);
     });
 
     element.addEventListener("mouseout", (e) => {
         let contact_link_text = e.currentTarget.querySelector("p.contact_link_name");
-        contact_link_text.style.display="none";
+        setTimeout( function() {
+            contact_link_text.style.display="none";
+        }
+        ,70);
     });
 });
