@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+/* Theme */
+
 * {
     font-family:'Play', sans-serif;;
 }
@@ -18,8 +20,30 @@ div.page_container {
     height: 100vh;
 }
 
+nav.navbar {
+    background-color: black;
+}
+
+div#landing {
+    background-color: black;
+}
+
+img#profile {
+    width:40vh;
+    border-radius: 20vh;
+}
+
 div#projects {
     height: auto;
+    background: #246A73;
+}
+
+div#contacts {
+    background-color: #368F8B;
+}
+
+div#email_form {
+    border-radius: 2vh;
 }
 
 div.project {
@@ -68,6 +92,7 @@ img.carousel_image {
 }
 
 div.feature_container {
+    background-color: #DDBEA8;
     min-width: 100%;
 }
 
@@ -112,6 +137,14 @@ p.contact_link_name {
 
 img.logo {
     max-height: 6vh;
+}
+
+h1.landing_title {
+    color: white;
+}
+
+h1.landing_title:hover {
+    color: red;
 }
 
 @media only screen and (max-width: 900px){

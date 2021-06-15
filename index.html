@@ -16,7 +16,7 @@
     <div class="container-fluid h-100 position-absolute p-0">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <a class="navbar-brand">Dean Raguso</a>
               <div class="navbar-expand" id="navbarNavAltMarkup">
@@ -56,16 +56,20 @@
         <div class="container-fluid d-flex flex-column p-0">
             
             <!-- Landing Page -->
-            <div class="page_container pb-5 container-fluid w-100 d-flex bg-dark">
-                <div class="container-fluid col-md-8 d-flex flex-column justify-content-center">
-                  <h1 class="display-1 text-center text-white">Dean Raguso</h1>
+            <div id="landing" class="page_container pb-5 container-fluid w-100 d-flex">
+                <div class="container-fluid col-md-8 d-flex flex-column justify-content-center align-items-center">
+                  <div class="container-fluid w-100 d-flex justify-content-center">
+                    <h1 class="landing_title display-1 text-center">Dean </h1>
+                    <h1 class="landing_title display-1 text-center">&nbspRaguso</h1>
+                  </div>
+                  <img id="profile" src="assets/profile.jpeg">
                   <h2 class="display-2 text-center text-white">A Melbourne based Web Developer.</h2>
                   <a href="#projects"><p class="text-white text-center display-6">Projects</p></a>
                 </div>
             </div>
 
             <!-- Feature Divider 1 -->
-            <div class="feature_container container-fluid w-100 d-flex bg-warning"> 
+            <div class="feature_container container-fluid w-100 d-flex"> 
                 <div class="container-fluid col-md-8 my-5">
                   <h3>My Technology</h3>
                   <p>My typical tech-stack is based around Rails. Postgres, JavaScript, HTML, and CSS are used in almost all of my projects.</p> 
@@ -84,7 +88,7 @@
             </div>
 
             <!-- Projects Page -->
-            <div id="projects" class="page_container container-fluid w-100 d-flex bg-primary"> 
+            <div id="projects" class="page_container container-fluid w-100 d-flex"> 
                 <div class="container-fluid col-md-11 my-5 d-flex flex-column">
                     <h3 class="display-1 text-white text-center">Projects</h3>
 
@@ -248,14 +252,14 @@
             </div>
 
             <!-- Feature Divider 2 -->
-            <div class="feature_container container-fluid w-100 d-flex bg-warning"> 
-                <div class="container-fluid col-md-8 bg-secondary my-5">
+            <div class="feature_container container-fluid w-100 d-flex"> 
+                <div class="container-fluid col-md-8 my-5">
                 </div>
             </div>
 
             <!-- Contacts Page -->
-            <div id="contacts" class="page_container container-fluid w-100 d-flex bg-success justify-content-center align-items-center p-3"> 
-                <div class="container-fluid col-md-8 bg-secondary my-5">
+            <div id="contacts" class="page_container container-fluid w-100 d-flex justify-content-center align-items-center p-3"> 
+                <div id="email_form" class="container-fluid col-md-8 my-5 bg-dark">
                     <h3 class="display-1 text-white text-center">Message Me</h3>
                     <!-- 99Inbound form -->
                     <div class="inbound-form-wrapper" id="form_5300" data-path="https://app.99inbound.com/i/7a7bc2cb-52cc-4a43-bac8-9c6c7ae935cc" data-token="3S4trmDwdyJvMhXcE8ycbwtt"></div>
