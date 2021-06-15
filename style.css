@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    font-family:'Play', sans-serif;;
+}
+
 body {
     height: 100vh;
 }
@@ -43,8 +49,6 @@ h4.project_link {
     text-align: center;
 }
 
-
-
 div.carousel {
     display: flex;
     align-items: center;
@@ -65,7 +69,21 @@ img.carousel_image {
 
 div.feature_container {
     min-width: 100%;
-    height: 25vh;
+}
+
+div.feature_container_inner {
+    width: 100%;
+    margin: 2vh;
+}
+
+div.feature_content {
+    width: 60%;
+}
+
+img.feature_tool_image {
+    width: 10%;
+    min-width: 40px;
+    max-width: 75px;
 }
 
 div.contact_link {
@@ -116,4 +134,9 @@ img.logo {
         padding-top: 0;
         width: 100%;
     }
+
+    div.feature_content {
+        width: 100%;
+    }
 }
+
