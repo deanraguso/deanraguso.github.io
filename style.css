@@ -13,22 +13,43 @@ div.page_container {
 }
 
 div#projects {
-    height: 150vh
+    height: auto;
 }
 
 div.project {
-    height: 30%;
+    display: flex;
+    min-height: 30vh;
     padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
     border-radius: 0 2vh 2vh 0;
 }
 
+div.project_text {
+    width: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+div.project_links {
+    background-color: white;
+    color: black;
+    border-radius: 2vh;
+}
+
+h4.project_link {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+
+
 div.carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     min-width: 275px;
 }
 
@@ -76,17 +97,23 @@ img.logo {
 }
 
 @media only screen and (max-width: 900px){
-    div.carousel {
-        padding-top: 0;
-        width: 100%;
+    
+    div.project {
+        flex-direction: column;
+        border-radius: 0 0 2vh 2vh;
+        justify-content: flex-start;
+        min-height: 60vh;
     }
 
-    div.project {
-        border-radius: 0 0 2vh 2vh;
-        align-items: flex-start;
+    div.project_text {
+        width: 100%;
+        padding-left: 1vh;
+        padding-right: 1vh;
     }
 
     div.carousel {
         min-width: 0;
+        padding-top: 0;
+        width: 100%;
     }
 }

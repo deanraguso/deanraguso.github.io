@@ -41,6 +41,6 @@ document.querySelectorAll("div.contact_link").forEach((element, index) => {
         }
         ,index*200 + 100, e);
 
-    }, 3000, element, index); //Binds to function.
+    }, 5000, element, index); //Binds to function.
 
 });
