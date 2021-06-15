@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-/* Theme */
+/* Theme https://coolors.co/c2c2c2-ffffff-da7d58-323031-3d3b3c-5f5b6b */
 
 * {
     font-family:'Play', sans-serif;;
@@ -21,11 +21,11 @@ div.page_container {
 }
 
 nav.navbar {
-    background-color: black;
+    background-color: #323031;
 }
 
 div#landing {
-    background-color: black;
+    background-color: #323031;
 }
 
 img#profile {
@@ -34,16 +34,18 @@ img#profile {
 }
 
 div#projects {
+    color: black;
     height: auto;
-    background: #246A73;
+    background: #d6d6d6;
 }
 
 div#contacts {
-    background-color: #368F8B;
+    background-color: #d6d6d6;
 }
 
 div#email_form {
     border-radius: 2vh;
+    background-color: #323031;
 }
 
 div.project {
@@ -53,6 +55,7 @@ div.project {
     padding-left: 0;
     padding-right: 0;
     border-radius: 0 2vh 2vh 0;
+    background-color: #323031;
 }
 
 div.project_text {
@@ -92,7 +95,7 @@ img.carousel_image {
 }
 
 div.feature_container {
-    background-color: #DDBEA8;
+    background-color: #DA7D58;
     min-width: 100%;
 }
 
@@ -109,6 +112,9 @@ img.feature_tool_image {
     width: 10%;
     min-width: 40px;
     max-width: 75px;
+    background-color: white;
+    border-radius: 2vh;
+    padding: 2px;
 }
 
 div.contact_link {
@@ -137,6 +143,7 @@ p.contact_link_name {
 
 img.logo {
     max-height: 6vh;
+    background-color: white;
 }
 
 h1.landing_title {
