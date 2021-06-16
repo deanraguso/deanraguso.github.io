@@ -30,7 +30,7 @@ document.querySelectorAll("div.contact_link").forEach((element, index) => {
     });
 
     // Adds random wiggles to each link
-    setInterval((e, index) => {
+    setTimeout((e, index) => {
         setTimeout( function(e) {
             e.style.width = this.mo ? e.style.width :"12vh";
         }
@@ -41,6 +41,12 @@ document.querySelectorAll("div.contact_link").forEach((element, index) => {
         }
         ,index*200 + 100, e);
 
-    }, 5000, element, index); //Binds to function.
+    }, 1500, element, index); //Binds to function.
 
+});
+
+document.querySelectorAll("h4.project_link").forEach((element)=> {
+    element.addEventListener('click', (e) => {
+        e.currentTarget.querySelector("a").click();
+    });
 });
