@@ -17,13 +17,13 @@
     <div class="container-fluid h-100 position-absolute p-0">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Dean Raguso</a>
               <div class="navbar-expand" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                  <a class="nav-link" href="#projects">Projects</a>
-                  <a class="nav-link" href="#contacts">Contact Me</a>
+                  <a class="nav-link px-3 mx-2" href="#projects">Projects</a>
+                  <a class="nav-link px-3 mx-2" href="#contacts">Contact Me</a>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                     <h2 class="landing_title display-1 text-center">&nbspWeb</h1>
                     <h2 class="landing_title display-1 text-center">&nbspDeveloper</h1>
                   </div>
-                  <a href="#projects"><p class="text-white text-center display-6">Projects</p></a>
+                  <a id='projects_link' href="#projects"><p class="text-white text-center display-6">View Projects</p></a>
                 </div>
             </div>
 
@@ -97,6 +97,7 @@
             <!-- Projects Page -->
             <div id="projects" class="page_container container-fluid w-100 d-flex"> 
                 <div class="container-fluid col-md-11 my-5 d-flex flex-column">
+                    <a href="#navbar" class="landing_link p-0 m-0 d-flex justify-content-center"><img class="landing_link_chevron" src="assets/chevron.png"></img></a>
                     <h3 class="display-1 text-center text-white">Projects</h3>
 
                     <!-- Project 1 -->
@@ -142,6 +143,7 @@
                             <li>Uses Rails Action Cable to achieve instant messages using websocket connections.</li>
                             <li>Built with Devise for secure authorization/ authentication.</li>
                           </ul>
+                          <p>Please wait up to 30s for live website to load.</p>
                           <div class="project_links container-fluid d-flex">
                             <h4 class="project_link"><a href="https://github.com/deanraguso/Chat-Point" target="_BLANK">GitHub</a></h4>
                             <h4 class="project_link"><a href="https://dean-chat-point.herokuapp.com" target="_BLANK">View Live</a></h4>
@@ -197,6 +199,7 @@
                             <li>User to user messaging, made instant using Action Cable.</li>
                             <li>Built with Devise for secure authorization/ authentication.</li>
                           </ul>
+                          <p>Please wait up to 30s for live website to load.</p>
                           <div class="project_links container-fluid d-flex">
                             <h4 class="project_link"><a href="https://github.com/deanraguso/Digital-Salvage" target="_BLANK">GitHub</a></h4>
                             <h4 class="project_link"><a href="https://digital-salvage.herokuapp.com" target="_BLANK">View Live</a></h4>
@@ -248,6 +251,7 @@
                             <li>Allows users to sign up, and save thier favorite items.</li>
                             <li>JQuery graph of the items in-game price fluctuation for easy analysis.</li>
                           </ul>
+                          <p>Please wait up to 30s for live website to load.</p>
                           <div class="project_links container-fluid d-flex">
                             <h4 class="project_link"><a href="https://github.com/deanraguso/DD_Stonks" target="_BLANK">GitHub</a></h4>
                             <h4 class="project_link"><a href="https://dd-stonks.herokuapp.com" target="_BLANK">View Live</a></h4>
@@ -268,7 +272,8 @@
             </div>
 
             <!-- Contacts Page -->
-            <div id="contacts" class="page_container container-fluid w-100 d-flex justify-content-center align-items-center p-3"> 
+            <div id="contacts" class="page_container container-fluid w-100 d-flex justify-content-center align-items-center p-3 flex-column"> 
+                <a href="#navbar" class="landing_link p-0 m-0 d-flex justify-content-center"><img class="landing_link_chevron" src="assets/chevron.png"></img></a>
                 <div id="email_form" class="container-fluid col-md-8 my-5">
                     <h3 class="display-1 text-white text-center">Message Me</h3>
                     <!-- 99Inbound form -->

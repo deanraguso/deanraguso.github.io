@@ -24,8 +24,36 @@ nav.navbar {
     background-color: #323031;
 }
 
+nav.navbar-nav {
+    background-color: #3D3B3C !important;
+}
+
+a.nav-link {
+    color: white !important;
+    background-color: #3D3B3C !important;
+    border-radius: 1vh;
+}
+
+a.nav-link:hover {
+    background-color: #DA7D58 !important;
+}
+
 div#landing {
     background-color: #323031;
+}
+
+a#projects_link {
+    text-decoration: none;
+    text-align: center;
+    padding: 1vh 2vh 0 2vh;
+    border: #DA7D58 2px solid;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    transition: 0.2s;
+}
+
+a#projects_link:hover {
+    background-color: #DA7D58;
 }
 
 img#profile {
@@ -99,7 +127,7 @@ div.carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     min-width: 275px;
 }
 
@@ -152,6 +180,7 @@ div.contact_link {
 
 div.contact_link:hover {
     width: 18vh;
+    background-color: #DA7D58;
 }
 
 p.contact_link_name {
@@ -162,7 +191,6 @@ p.contact_link_name {
 
 img.logo {
     max-height: 6vh;
-    background-color: white;
 }
 
 h1.landing_title {
@@ -183,11 +211,21 @@ h2.landing_title:hover {
     color: #DA7D58;
 }
 
+img.landing_link_chevron {
+    padding: 0.5vh;
+    background-color: white;
+    border: black 0.2vh solid;
+    border-radius: 20vh;
+    width: 5vh;
+    transition: 0.2s;
+}
 
+img.landing_link_chevron:hover {
+    background-color: #DA7D58;
+    width: 5vh;
+}
 
-
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1300px){
     
     div.project {
         flex-direction: column;
