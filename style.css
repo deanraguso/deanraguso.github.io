@@ -47,6 +47,7 @@ a#projects_link {
     text-align: center;
     padding: 1vh 2vh 0 2vh;
     border: #DA7D58 2px solid;
+    background-color: #3D3B3C;
     border-radius: 1vh;
     margin-top: 2vh;
     transition: 0.2s;
@@ -62,12 +63,6 @@ img#profile {
     border: #DA7D58 2px solid;
 }
 
-div#projects {
-    color: black;
-    height: auto;
-    background: #3D3B3C;
-}
-
 div#contacts {
     background-color: #3D3B3C;
 }
@@ -77,13 +72,20 @@ div#email_form {
     background-color: #323031;
 }
 
+div#projects {
+    color: black;
+    height: auto;
+    background: #3D3B3C;
+}
+
+div#projects_inner {
+    align-content: flex-end;
+}
+
 div.project {
-    display: flex;
+    width: 90%;
     min-height: 30vh;
-    padding-top: 5px;
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: 0 2vh 2vh 0;
+    border-radius: 2vh 0 0 2vh;
     background-color: #323031;
 }
 
@@ -213,7 +215,7 @@ h2.landing_title:hover {
 
 img.landing_link_chevron {
     padding: 0.5vh;
-    background-color: white;
+    background-color: #323031;
     border: black 0.2vh solid;
     border-radius: 20vh;
     width: 5vh;
@@ -232,6 +234,9 @@ img.landing_link_chevron:hover {
         border-radius: 0 0 2vh 2vh;
         justify-content: flex-start;
         min-height: 60vh;
+        width: 100%;
+        padding-right: 1vh !important;
+        margin-right: 1.5vh !important;
     }
 
     div.project_text {
