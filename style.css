@@ -65,6 +65,7 @@ img#profile {
 
 div#contacts {
     background-color: #3D3B3C;
+    height: auto;
 }
 
 div#email_form {
